@@ -1,0 +1,222 @@
+/*
+margin corresponde à margem externa em relação ao elemento
+ng corresponde à "margem" interna em relação ao elemento
+background correspode ao fundo, no qual é possível colocar uma cor sólida única
+ou em grandiente
+
+box-sizing: content-box não é uma boa prática, pois
+ao aumentarmos uma imagem, por exemplo, ouqualquer outro elemento,
+o que é que a CAIXA DE CONTEÚDO (em que o elemento está)
+aumenta e não ele em si, causando possíveis distorções.
+O ideal é utilizar box-sizing: border-box
+
+Utilizar o site: https://cssgrandient.io/
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#menu {
+  display: flex; /*Selecionar o layout flexbox */
+  list-style: none; /*Tirar as bolinhas de cada item da lista*/
+  padding: 25px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+#menu a {
+  color: rgb(138, 146, 221); /* Aplicar uma cor à fonte */
+  font-family: "Josefin Sans", sans-serif; /* Aplicar uma fonte */
+  font-size: 19px; /* Aumentar tamanho da fonte */
+  text-decoration: none; /* Tirar o sublinhado do link*/
+  flex-direction: row; /* Alinhar um ao lado do outro*/
+  margin: 25px; /* Atribuir uma margim a cada item*/
+  text-transform: uppercase;
+}
+
+/*Ao passar o mouse*/
+#menu a:hover {
+  color: rgb(255, 255, 255);
+}
+
+header {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(36,73,193,1) 20%, rgba(1,0,17,1) 100%);
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.apresentacao {
+  display: flex;
+  height: 330px;
+}
+
+h1{
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  font-family:'Josefin Sans', sans-serif;
+  line-height: 178%; /* Define a altura da linha em relação à próxima */
+  margin-top: auto;
+}
+h2{
+color: rgb(201, 207, 223);
+font-family: "Josefin Sans", sans-serif;
+
+}
+h3{
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgb(243, 243, 243);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(36,73,193,1) 20%, rgba(1,0,17,1) 100%);
+  font-size: 20px;
+  padding-top: 12px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+
+.right {
+  flex: 4;
+  text-align: left;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.left {
+  flex: 6;
+  text-align: center;
+}
+
+.left img {
+  border-radius: px;
+}
+
+.btn {
+  border: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+
+}
+
+
+.btnContact {
+  background-color: rgb(235, 235, 235);
+  color: rgb(20, 0, 92);
+  margin-top: 20px;
+}
+
+.btnContact:hover {
+  background-color: rgb(9, 84, 119);
+  color: rgb(252, 252, 252);
+}
+
+.containerServicos{
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(36,73,193,1) 20%, rgba(1,0,17,1) 100%);
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+
+.itemServicos1, 
+.itemServicos3, 
+.itemServicos5, 
+.itemServicos7 { 
+
+  border: 2px solid rgb(23, 160, 202);
+  border-radius: 5px;
+  margin: 15px;
+  padding: 30px 15px;
+  text-align: center;
+}
+.itemServicos1:hover,
+.itemServicos3:hover, 
+.itemServicos5:hover, 
+.itemServicos7:hover{
+
+  border: 1px solid rgb(109, 74, 192);
+  background: rgb(74, 77, 228);
+cursor: pointer;
+
+}
+
+.itemServicos2, 
+.itemServicos4,
+.itemServicos6, 
+.itemServicos8 {
+  border: 2px solid rgb(24, 228, 34);
+  border-radius: 5px;
+  margin: 15px;
+  padding: 30px 15px ;
+  text-align: center;
+
+}
+
+.itemServicos2:hover, 
+.itemServicos4:hover,
+.itemServicos6:hover, 
+.itemServicos8:hover {
+
+  border: 1px solid rgb(109, 74, 192);
+  background: rgb(74, 77, 228);
+  cursor: pointer;
+
+
+}
+
+.containerServicos h2{ 
+ font-family: "Josefin Sans", sans-serif;
+ font-size: 18px;
+}
+.containerServicos img{
+width: 60px;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.containerSobremim {
+  display: flex;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(36,73,193,1) 20%, rgba(1,0,17,1) 100%);
+  
+}
+
+.containerSobremim .left{
+background: rgb(255, 255, 255);
+padding-right: 15px;
+padding-left: 18px;
+flex: 5;
+margin-bottom: auto;
+margin-top: auto;
+border-radius: 5%;
+
+}
+.containerSobremim .right{
+
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(36,73,193,1) 20%, rgba(1,0,17,1) 100%);
+flex: 5;
+
+}
+#sobremim h3{
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(36,73,193,1) 20%, rgba(1,0,17,1) 100%);
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.containerSobremim video{
+border-radius: 5%;
+}
