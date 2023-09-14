@@ -188,35 +188,26 @@ html {
 }
 .containerSobremim {
   display: flex;
-  background: rgb(255, 255, 255);
   background: linear-gradient(90deg, rgba(36,73,193,1) 20%, rgba(1,0,17,1) 100%);
-  
+  padding-bottom: 50px;
 }
 
 .containerSobremim .left{
-background: rgb(255, 255, 255);
-padding-right: 15px;
+padding-right: 18px;
 padding-left: 18px;
 flex: 5;
 margin-bottom: auto;
 margin-top: auto;
-border-radius: 5%;
+color: white;
+
 
 }
 .containerSobremim .right{
-
-  background: rgb(255, 255, 255);
-  background: linear-gradient(90deg, rgba(36,73,193,1) 20%, rgba(1,0,17,1) 100%);
 flex: 5;
 
 }
-#sobremim h3{
-  background: rgb(255, 255, 255);
-  background: linear-gradient(90deg, rgba(36,73,193,1) 20%, rgba(1,0,17,1) 100%);
-padding-top: 10px;
-padding-bottom: 10px;
-}
 
-.containerSobremim video{
-border-radius: 5%;
+#sobremim h3{
+padding-top: 18px;
+padding-bottom: 18px;
 }
