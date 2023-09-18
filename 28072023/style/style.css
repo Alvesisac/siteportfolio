@@ -146,7 +146,10 @@ h3{
 
   border: 1px solid rgb(109, 74, 192);
   background: rgb(74, 77, 228);
-cursor: pointer;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 100vw rgb(0, 0, 0, 0.637);
+  transition: ease 1.5s;
+  transform: scale(1.1);
 
 }
 
@@ -154,7 +157,7 @@ cursor: pointer;
 .itemServicos4,
 .itemServicos6, 
 .itemServicos8 {
-  border: 2px solid rgb(24, 228, 34);
+  border: 2px solid rgb(123, 113, 214);
   border-radius: 5px;
   margin: 15px;
   padding: 30px 15px ;
@@ -170,6 +173,9 @@ cursor: pointer;
   border: 1px solid rgb(109, 74, 192);
   background: rgb(74, 77, 228);
   cursor: pointer;
+  box-shadow: 0px 0px 0px 100vw rgba(0, 0, 0, 0.637);
+  transition: ease 1.5s;
+  transform: scale(1.1);
 
 
 }
@@ -210,4 +216,70 @@ flex: 5;
 #sobremim h3{
 padding-top: 18px;
 padding-bottom: 18px;
+}
+
+
+#contato {
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(36,73,193,1) 20%, rgba(1,0,17,1) 100%);
+
+}
+
+.displayContato {
+
+  display: flex;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+
+}
+
+.containerContato h2 {
+  font-size: 22px;
+  /*background: linear-gradient(90deg, rgba(36,73,193,1) 20%, rgba(1,0,17,1) 100%);*/
+}
+
+input,
+textarea {
+
+  width: 200px;
+  padding: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(0, 0, 0);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+
+}
+
+.Mensagem {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+form h2 {
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+
+textarea {
+  width: 255px;
+  resize: none;
+  height: 100px;
+}
+
+.Mensagem input {
+  width: 130px;
+  font-size: 13px;
+  background: rgb(0, 75, 136);
+  color: white;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  border-radius: 5px;
+}
+
+.Mensagem input:hover{
+
+background: rgb(30, 135, 184);
 }
