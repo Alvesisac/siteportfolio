@@ -64,6 +64,7 @@ h1{
 h2{
 color: rgb(201, 207, 223);
 font-family: "Josefin Sans", sans-serif;
+padding-left: 20px;
 
 }
 h3{
@@ -84,16 +85,16 @@ h3{
   text-align: left;
   margin-top: auto;
   margin-bottom: auto;
+  margin-left: 20px;
+  padding-left: 25px;
 }
 
 .left {
   flex: 6;
-  text-align: center;
+  font-weight: bold;
+  margin-right: 35px;
 }
 
-.left img {
-  border-radius: px;
-}
 
 .btn {
   border: 2px solid transparent;
@@ -184,10 +185,7 @@ h3{
  font-family: "Josefin Sans", sans-serif;
  font-size: 18px;
 }
-.containerServicos img{
-width: 60px;
 
-}
 
 html {
   scroll-behavior: smooth;
@@ -295,4 +293,11 @@ margin-top: -30px;
 }
 .SocialMedia i {
   font-size: 28px;
+  padding-left: 50px;
 }
+
+.SocialMedia{
+
+  margin-top: 50px;
+}
+
