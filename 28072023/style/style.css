@@ -365,7 +365,28 @@ text-align: center;
 
 .imagem img{
 
-width: 200px;
+width: 170px;
 margin: 10px;
+}
 
+footer{
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(36, 73, 193, 1) 20%, rgba(1, 0, 17, 1) 100%);
+}
+
+@media screen and (max-widht: 480px){
+  .apresentacao{
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+  .left img{
+    margin-bottom: 14px;
+  }
+
+  .right{
+
+    text-align: center;
+  }
 }
